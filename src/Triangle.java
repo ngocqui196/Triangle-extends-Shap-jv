@@ -64,7 +64,7 @@ public class Triangle extends Shap{
         double p = getPerimeter() / 2;
         double area;
         if (isTriangle()) {
-            area = Math.sqrt((p - side1) * (p - side2) * (p - side3));
+            area = Math.sqrt(p*(p - side1) * (p - side2) * (p - side3));
             return area;
         } else {
             return -1.0;
